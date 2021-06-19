@@ -1,6 +1,6 @@
 <p align="center">
   <img height="256px" width="256px" style="text-align: center;"
-  src="https://cdn.jsdelivr.net/gh/anthonynahas/ngx-auth-firebaseui@master/demo/src/assets/logo.svg">
+  src="https://cdn.jsdelivr.net/gh/anthonynahas/ngx-auth-firebaseui@master/assets/angular-material-extensions-logo.svg">
 </p>
 
 # ngx-auth-firebaseui - Open Source Library for Angular Web Apps to integrate a material user interface for firebase authentication.
@@ -10,7 +10,6 @@
 [![docs: typedoc](https://img.shields.io/badge/docs-typedoc-4D0080.svg)](https://ngx-auth-firebaseui.firebaseapp.com/doc/index.html)
 [![codecov](https://codecov.io/gh/anthonynahas/ngx-auth-firebaseui/branch/master/graph/badge.svg)](https://codecov.io/gh/anthonynahas/ngx-auth-firebaseui)
 [![CircleCI branch](https://img.shields.io/circleci/project/github/AnthonyNahas/ngx-auth-firebaseui/master.svg?label=circleci)](https://circleci.com/gh/AnthonyNahas/ngx-auth-firebaseui)
-[![Build Status](https://travis-ci.org/AnthonyNahas/ngx-auth-firebaseui.svg?branch=master)](https://travis-ci.org/AnthonyNahas/ngx-auth-firebaseui)
 [![Join the chat at https://gitter.im/ngx-auth-firebaseui/Lobby](https://badges.gitter.im/ngx-auth-firebaseui/Lobby.svg)](https://gitter.im/ngx-auth-firebaseui/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![dependency Status](https://david-dm.org/anthonynahas/ngx-auth-firebaseui/status.svg)](https://david-dm.org/anthonynahas/ngx-auth-firebaseui)
 [![devDependency Status](https://david-dm.org/anthonynahas/ngx-auth-firebaseui/dev-status.svg?branch=master)](https://david-dm.org/anthonynahas/ngx-auth-firebaseui#info=devDependencies)
@@ -24,10 +23,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/ngAnthonyy.svg?style=social&label=Follow)](https://twitter.com/ngAnthonyy)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/gdi2290/awesome-angular)
 
-<p align="center">
-  <img alt="ngx-auth-firebaseui-logo.png" width="256px" style="text-align: center;"
-  src="ngx-auth-firebaseui-logo.png">
-</p>
+
 
 Angular UI component for [firebase](https://firebase.google.com/docs/auth/web/firebaseui) authentication.
 This library is an angular module (including angular components and services) that allows to authenticate
@@ -49,7 +45,7 @@ by starring :star: and sharing it :loudspeaker:
 - [ngx-auth-firebaseui vs firebaseui-web](#vs)
 - [Why to use ngx-auth-firebaseui ?](#why-to-use-ngx-auth-firebaseui)
 - [Library's components](#components)
-- [Supported Providers](#supported-procress-and-actions)
+- [Supported Providers](#supported-providers)
 - [Supported Processes and Actions](#supported-procress-and-actions)
 - [Requirements](#requirements)
 - [Demo](#demo)
@@ -75,12 +71,13 @@ by starring :star: and sharing it :loudspeaker:
 | Sign In                                        | :heavy_check_mark:    |  :heavy_check_mark:    |
 | Sign In Anonymously                            | :heavy_check_mark:    |  :heavy_check_mark:    |
 | Sign In with Google                            | :heavy_check_mark:    |  :heavy_check_mark:    |
+| Sign In with Apple                             | :heavy_check_mark:    |  :heavy_check_mark:    |
 | Sign In with Facebook                          | :heavy_check_mark:    |  :heavy_check_mark:    |
 | Sign In with Twitter                           | :heavy_check_mark:    |  :heavy_check_mark:    |
 | Sign In with Github                            | :heavy_check_mark:    |  :heavy_check_mark:    |
 | Sign In with Microsoft                         | :heavy_check_mark:    |  :heavy_check_mark:    |
 | Sign In with Yahoo                             | :heavy_check_mark:    |  :heavy_check_mark:    |
-| Sign In with Phone`number`                       | :x:                   |  :heavy_check_mark:    |
+| Sign In with Phone`number`                     | :x:                   |  :heavy_check_mark:    |
 | Sign out                                       | :heavy_check_mark:    |  :x:                   |
 | Sign in/up progress indicator                  | :heavy_check_mark:    |  :x:                   |
 | Password Strength indicator                    | :heavy_check_mark:    |  :x:                   |
@@ -143,6 +140,7 @@ by starring :star: and sharing it :loudspeaker:
 - anonymously
 - email and password (traditional)
 - google
+- apple
 - facebook
 - twitter
 - github
@@ -155,7 +153,7 @@ by starring :star: and sharing it :loudspeaker:
 ## Supported Processes and Actions:
 - sign up
 - sign in
-- sign in Anonymously | with google, facebook, twitter, github, microsoft, yahoo
+- sign in Anonymously | with google, apple, facebook, twitter, github, microsoft, yahoo
 - sign out
 - validation of password's strength while creating a new account using [@angular-material-extensions/password-strength](https://github.com/AnthonyNahas/@angular-material-extensions/password-strength)
 - forgot/reset password
@@ -173,14 +171,14 @@ by starring :star: and sharing it :loudspeaker:
 - [angular material theme](https://material.angular.io/guide/getting-started#step-4-include-a-theme)
 - [angular material icons](https://material.angular.io/guide/getting-started#step-6-optional-add-material-icons)
 
-- [angular cdk - v8.x](https://www.npmjs.com/package/@angular/cdk)
-- [angular material - v8.x](https://www.npmjs.com/package/@angular/material)
-- [angular forms - v8.x](https://www.npmjs.com/package/@angular/forms)
-- [angular animations - v8.x](https://www.npmjs.com/package/@angular/animations)
-- [angular router - v8.x](https://www.npmjs.com/package/@angular/router)
-- [angular flex-layout v8.0.0-beta.26](https://www.npmjs.com/package/@angular/flex-layout)
-- [@angular/fire - v5.2.x](https://www.npmjs.com/package/@angular/fire)
-- [firebase - v6.x](https://www.npmjs.com/package/firebase)
+- [angular cdk - v11.x](https://www.npmjs.com/package/@angular/cdk)
+- [angular material - v11.x](https://www.npmjs.com/package/@angular/material)
+- [angular forms - v11.x](https://www.npmjs.com/package/@angular/forms)
+- [angular animations - v11.x](https://www.npmjs.com/package/@angular/animations)
+- [angular router - v11.x](https://www.npmjs.com/package/@angular/router)
+- [angular flex-layout v11.0.0-beta.33](https://www.npmjs.com/package/@angular/flex-layout)
+- [@angular/fire - v6.x](https://www.npmjs.com/package/@angular/fire)
+- [firebase - v8.x](https://www.npmjs.com/package/firebase)
 
 the full tutorial guide can be found [here](https://ngx-auth-firebaseui.firebaseapp.com/getting-started)
 
@@ -301,22 +299,23 @@ automatically change to `column`
 
 ```json
 "peerDependencies": {
-    "@angular/core": "^8.x",
-    "@angular/animations": "^8.x",
-    "@angular/cdk": "^8.x",
-    "@angular/flex-layout": "^8.0.0-beta.27",
-    "@angular/forms": "^8.x",
-    "@angular/material": "^8.x",
-    "@angular/fire": "5.3.x",
-    "firebase": "7.x",
+    "@angular/core": "^11.x",
+    "@angular/animations": "^11.x",
+    "@angular/cdk": "^11.x",
+    "@angular/flex-layout": "^11.0.0-beta.33",
+    "@angular/forms": "^11.x",
+    "@angular/material": "^11.x",
+    "@angular/fire": "6.x",
+    "firebase": "8.x",
   }
 ```
 
 #### NOTE:
-If you are still running angular v5, please consider to user `ngx-auth-firebaseui` v0.x
 
 v1.x should be used with angular v7 projects
 v3.x should be used with angular v8 projects
+v4.x should be used with angular v9/10 projects
+v5.x should be used with angular v11 projects
 
 [help!](https://ngx-auth-firebaseui.firebaseapp.com/getting-started)
 
@@ -326,7 +325,7 @@ v3.x should be used with angular v8 projects
 <a name="dependencies"/>
 
 ## Dependencies
-* [Angular](https://angular.io) (*requires* Angular 2 or higher, developed with 8.x) - obviously
+* [Angular](https://angular.io) (*requires* Angular 2 or higher, developed with 11.x) - obviously
 * [@angular-material-extensions/password-strength](https://www.npmjs.com/package/@angular-material-extensions/password-strength)
 
 the [@angular-material-extensions/password-strength](https://www.npmjs.com/package/@angular-material-extensions/password-strength) is used
@@ -334,7 +333,7 @@ to indicate how secure is the provided password when registering a new firebase 
 
 <p align="center">
   <img width="384px" style="text-align: center;"
-   src="assets/v0.7.1/features/password/ngx-material-password-strength.gif">
+   src="assets/v0.7.1****/features/password/ngx-material-password-strength.gif">
 </p>
 
 <a name="installation"/>
@@ -361,6 +360,11 @@ Install above dependencies via *npm*.
 Now install `ngx-auth-firebaseui` via:
 ```shell
 npm install --save ngx-auth-firebaseui
+```
+
+Install the dependencies `@angular-material-extensions/password-strength` via:
+```shell
+npm install --save @angular-material-extensions/password-strength
 ```
 
 ```bash
@@ -523,11 +527,11 @@ Once the library is imported, you can use its components, directives and pipes i
 ## API
 
 ### `<ngx-auth-firebaseui></ngx-auth-firebaseui>` [see the api](https://github.com/AnthonyNahas/ngx-auth-firebaseui/blob/master/docs/ngx-auth-firebaseui.md#api)
-### `<ngx-auth-firebaseui-providers></ngx-auth-firebaseui-login>` [see the api](https://github.com/AnthonyNahas/ngx-auth-firebaseui/blob/master/docs/ngx-auth-firebaseui-login.md#api)
-### `<ngx-auth-firebaseui-providers></ngx-auth-firebaseui-register>` [see the api](https://github.com/AnthonyNahas/ngx-auth-firebaseui/blob/master/docs/ngx-auth-firebaseui-register.md#api)
+### `<ngx-auth-firebaseui-login></ngx-auth-firebaseui-login>` [see the api](https://github.com/AnthonyNahas/ngx-auth-firebaseui/blob/master/docs/ngx-auth-firebaseui-login.md#api)
+### `<ngx-auth-firebaseui-register></ngx-auth-firebaseui-register>` [see the api](https://github.com/AnthonyNahas/ngx-auth-firebaseui/blob/master/docs/ngx-auth-firebaseui-register.md#api)
 ### `<ngx-auth-firebaseui-providers></ngx-auth-firebaseui-providers>` [see the api](https://github.com/AnthonyNahas/ngx-auth-firebaseui/blob/master/docs/ngx-auth-firebaseui-providers.md#api)
 ### `<ngx-auth-firebaseui-user></ngx-auth-firebaseui-user>` [see the api](https://github.com/AnthonyNahas/ngx-auth-firebaseui/blob/master/docs/ngx-auth-firebaseui-user.md#api)
-### `<ngx-auth-firebaseui-user></ngx-auth-firebaseui-avatar>` [see the api](https://github.com/AnthonyNahas/ngx-auth-firebaseui/blob/master/docs/ngx-auth-firebaseui-avatar.md#api)
+### `<ngx-auth-firebaseui-avatar></ngx-auth-firebaseui-avatar>` [see the api](https://github.com/AnthonyNahas/ngx-auth-firebaseui/blob/master/docs/ngx-auth-firebaseui-avatar.md#api)
 
 
 ### EXTRA TIP: Login Authentication Guard
@@ -585,18 +589,20 @@ export class AppRoutingModule {
 <a name="other-angular-libraries"/>
 
 ## Other Angular Libraries
-- [@firebaseui/ng-bootstrap](https://github.com/firebaseui/ng-bootstrap)
 - [ngx-linkifyjs](https://github.com/anthonynahas/ngx-linkifyjs)
 - [@angular-material-extensions/components](https://github.com/angular-material-extensions/components)
 - [@angular-material-extensions/password-strength](https://github.com/angular-material-extensions/password-strength)
 - [@angular-material-extensions/google-maps-autocomplete](https://github.com/angular-material-extensions/google-maps-autocomplete)
+- [@angular-material-extensions/fab-menu](https://github.com/angular-material-extensions/fab-menu)
+- [@angular-material-extensions/select-country](https://github.com/angular-material-extensions/select-country)
+- [@angular-material-extensions/select-icon](https://github.com/angular-material-extensions/select-icon)
 - [@angular-material-extensions/pages](https://github.com/angular-material-extensions/pages)
 - [@angular-material-extensions/link-preview](https://github.com/angular-material-extensions/link-preview)
 - [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
 - [@angular-material-extensions/faq](https://github.com/angular-material-extensions/faq)
 - [@angular-material-extensions/jumbotron](https://github.com/angular-material-extensions/jumbotron)
 - [angular-material-extensions/freelancer-theme](https://github.com/angular-material-extensions/freelancer-theme)
-- [@angular-material-extensions/combination-generator](https://github.com/angular-material-extensions/combination-generator)
+- [@firebaseui/ng-bootstrap](https://github.com/firebaseui/ng-bootstrap)
 
 ---
 
@@ -611,14 +617,31 @@ export class AppRoutingModule {
 
 ---
 
+# Youtube Videos
+
+https://www.youtube.com/watch?v=qP5zw7fjQgo&feature=emb_logo&ab_channel=Fireship
+https://www.youtube.com/watch?v=KpfJCEvpS9g&t=2s&ab_channel=JsWiz
+
+# Sponsors
+
 ![jetbrains logo](assets/jetbrains-variant-4_logos/jetbrains-variant-4.png)
 
 This project is supported by [jetbrains](https://www.jetbrains.com/) with 1 ALL PRODUCTS PACK OS LICENSE incl. [webstorm](https://www.jetbrains.com/webstorm)
 
+
+![fireship.io logo](assets/fireship.png)
+
+Best angular and firebase stuff by Jeff Delaney on [firebase.io](https://fireship.io/)
+
+check this [out](https://www.youtube.com/watch?v=qP5zw7fjQgo&feature=emb_logo&ab_channel=Fireship)
+
 ---
+
+
+
 
 <a name="license"/>
 
 ## License
 
-Copyright (c) 2019 [Anthony Nahas](https://github.com/AnthonyNahas). Licensed under the MIT License (MIT)
+Copyright (c) 2019-2021 [Anthony Nahas](https://github.com/AnthonyNahas). Licensed under the MIT License (MIT)
